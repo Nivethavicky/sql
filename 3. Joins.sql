@@ -49,13 +49,12 @@ order by employee.emp_id;
 
 
 -- without join query
-select employee.emp_id , employee.ename, branch.br_name 
+select employee.emp_id , employee.eMP_name, branch.brANCH_name 
 from employee,branch where employee.branch_id = branch.branch_id;
 
 --  cross join
-select employee.emp_id , employee.ename, branch.br_name 
+select employee.emp_id , employee.eMP_name, branch.brANCH_name 
 from employee cross join branch;
-
 
 select b.br_name , count(e.emp_id) emp_count
 from branch as b
