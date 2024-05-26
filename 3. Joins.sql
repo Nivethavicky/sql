@@ -32,9 +32,18 @@ insert into employee(emp_name,job_desc,salary,branch_id) values ("sathish" , "py
 insert into employee(emp_name,job_desc,salary,branch_id) values ("ismail" , "data science", 70000,2);
 
 
-select employee.emp_id , employee.ename, branch.br_name 
-from employee RIGHT join branch on employee.branch_id = branch.branch_id 
+select employee.emp_id , employee.eMP_Name, branch.brANCH_name 
+from employee LEFT join branch on employee.branch_id = branch.branch_id 
 order by employee.emp_id;
+
+select employee.emp_id , employee.eMP_Name, branch.brANCH_name 
+from employee RIGHT JOIN branch on employee.branch_id = branch.branch_id 
+order by employee.emp_id;
+
+select employee.emp_id , employee.eMP_Name, branch.brANCH_name 
+from employee INNER join branch on employee.branch_id = branch.branch_id 
+order by employee.emp_id;
+
 
 
 
