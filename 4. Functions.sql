@@ -2,7 +2,7 @@ SELECT * FROM employee;
 
 SELECT COUNT(emp_id)  total FROM employee; -- total count of entries in the table
 
-SELECT SUM(salary) FROM employee; -- avg salary of all employees
+SELECT SUM(salary) FROM employee; -- sum of salary of all employees
 
 SELECT AVG(salary) 
 FROM employee
