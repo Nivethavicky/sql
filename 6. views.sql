@@ -27,8 +27,8 @@ from employee inner join branch on employee.branch_id = branch.branch_id ;
 drop view emp_branch;
 
 
-SHOW FULL TABLES
-WHERE Table_Type LIKE 'VIEW';
+-- SHOW FULL TABLES
+--  WHERE Table_Type LIKE 'VIEW';   it shows views in database
 
 
-SHOW FULL TABLES;
+ -- SHOW FULL TABLES;   it shows all tables and views in database
